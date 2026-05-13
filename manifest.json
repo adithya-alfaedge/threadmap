@@ -1,17 +1,37 @@
 {
   "manifest_version": 3,
   "name": "ThreadMap",
-  "version": "0.1.0",
-  "description": "Navigation sidebar for Claude conversations",
-  "permissions": [],
+  "version": "1.0",
+  "description": "Ambient conversation mapping for Claude.",
+
+  "icons": {
+    "16": "icons/icon16.png",
+    "32": "icons/icon32.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+
   "host_permissions": [
     "https://claude.ai/*"
   ],
+
   "content_scripts": [
     {
-      "matches": ["https://claude.ai/*"],
+      "matches": [
+        "https://claude.ai/chat/*"
+      ],
       "js": ["content.js"],
       "css": ["styles.css"]
     }
-  ]
+  ],
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "adithyavinod1943@gmail.com",
+      "data_collection_permissions": {
+        "description": "Short explanation of data usage.",
+        "permissions": ["none required"],
+        "required": ["none"]
+      }
+    }
+  }
 }
