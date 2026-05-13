@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "ThreadMap",
+  "version": "0.1.0",
+  "description": "Navigation sidebar for Claude conversations",
+  "permissions": [],
+  "host_permissions": [
+    "https://claude.ai/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["https://claude.ai/*"],
+      "js": ["content.js"],
+      "css": ["styles.css"]
+    }
+  ]
+}

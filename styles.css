@@ -1,0 +1,27 @@
+#threadmap-sidebar {
+  position: fixed;
+  top: 80px;
+  right: 20px;
+
+  width: 260px;
+  min-height: 120px;
+
+  background: #1e1e1e;
+  color: white;
+
+  border: 1px solid #333;
+  border-radius: 12px;
+
+  padding: 16px;
+
+  z-index: 999999;
+
+  box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+
+  font-family: sans-serif;
+}
+
+.threadmap-header {
+  font-size: 18px;
+  font-weight: bold;
+}
